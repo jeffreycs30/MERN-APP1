@@ -1,10 +1,9 @@
 import { useState,useEffect } from 'react'
-import './App.css'
-
-
+import './App.css';
 import './index.css';
 
 import {BrowserRouter,Routes,Route} from 'react-router-dom';
+import Dashboard from './components/Dashboard';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import AddShipments from './components/AddShipments';
@@ -15,7 +14,7 @@ function App() {
 return (
 <>
 <BrowserRouter>
-        <Header />
+        <Header/>
         <main>
           <Routes>
             <Route path="/" element={<Dashboard />} />
@@ -23,7 +22,7 @@ return (
             <Route path="/editshipments/:id" element={<EditShipments />} />
           </Routes>
         </main>
-        <Footer />
+        <Footer/>
       </BrowserRouter>
 
 </>
