@@ -44,6 +44,9 @@ function Dashboard(){
 
             </h1>
             <table className="border border-gray-500 w-[80%] mx-auto mt-8 mb-5">
+                <caption className="text-right mb-4">
+                    <Link to={'/addshipments'} className="text-blue-400 underline cursor-pointer text-xl">Add New Shipment</Link>
+                </caption>
                 <thead>
                     <tr className="bg-violet-600 border border-gray-400">
                         <th className="py-2 px-4 border border-gray-400 ">Sl.No</th>
